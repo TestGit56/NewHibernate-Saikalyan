@@ -1,0 +1,10 @@
+package com.google.dao;
+
+import java.io.Serializable;
+
+public class Employee implements Serializable {
+	private Integer empId = null;
+	private String empName = null;
+	private String empDesg  = null;
+	private Department department = null;
+	

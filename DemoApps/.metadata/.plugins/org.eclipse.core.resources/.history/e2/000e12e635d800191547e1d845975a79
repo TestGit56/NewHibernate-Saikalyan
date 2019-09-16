@@ -1,0 +1,19 @@
+package com.google;
+
+import com.google.dao.Department;
+import com.google.dao.DepartmentDAO;
+import com.google.dao.EmployeeDAO;
+
+public class One_To_Many {
+	
+	DepartmentDAO deptdao = new DepartmentDAO();
+	
+  Department dept = new Department();
+   dept.set
+	
+	EmployeeDAO empdao = new EmployeeDAO();
+	
+	
+	
+
+}

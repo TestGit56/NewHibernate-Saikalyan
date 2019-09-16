@@ -1,0 +1,4 @@
+
+Sep 15, 2019 22:27:22.80 NEW SESSION
+Sep 15, 2019 22:27:22.80 [5390:5390:0915/222722.807401:ERROR:sandbox_linux.cc(369)] InitializeSandbox() called with multiple threads in process gpu-process.
+Sep 15, 2019 22:27:24.16 Opening in existing browser session.

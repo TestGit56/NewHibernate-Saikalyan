@@ -1,0 +1,14 @@
+package com.google.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class DepartmentDAO {
+	SessionFactory sf = HBUtil.getSessionFactory(); 
+	  public void saveOrUpdate(Department dept)
+	  {
+		  Session session = sf.openSession();
+		  session.beginTransaction();
+		  session.saveOrUpdate(dept);
+	  }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+<class name="com.google.dao.Department" table="DEPARTMENT" >
+
+<id name="departmentId" column="DEPT_ID">
+<generator class="assigned">
+</generator>
+</id>
+
+
+<property name="departmentName" column="DEPT_NAME"></property>
+
+
+<set name="employeeset" table="EMPLOYEE"  inverse="false" lazy="false" cascade="all">
+<key column="DEPT_FK_ID"></key>
+<one-to-many class="com.google.dao.Employee" />
+</set>
+
+
+</class>
+</hibernate-mapping>
