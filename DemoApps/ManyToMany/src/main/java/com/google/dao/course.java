@@ -16,7 +16,7 @@ public class course implements Serializable {
 	}
 	@Id
     @Column(name="COURSE_ID")
-	private Integer courseId = null;
+	private Integer courseId = ;
     @Column(name="COURSE_NAME")
 	private String courseName = null;
 	public course() {
