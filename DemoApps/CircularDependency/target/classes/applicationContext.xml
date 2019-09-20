@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+         <bean id="empId" class="com.google.dao.Employee">
+     <constructor-arg value="Saikalyan"></constructor-arg> 
+     <constructor-arg ref = "addId"></constructor-arg>   
+     </bean>
+         
+         <bean id="addId" class="com.google.dao.Address">
+         <constructor-arg value ="hyd"></constructor-arg>
+         <constructor-arg ref = "empId"></constructor-arg>
+         </bean>
+         
+        </beans>
