@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/util
+    https://www.springframework.org/schema/util/spring-util.xsd">
+    
+    <bean id="pid1" class="com.google.bean.ProductBean" 
+    p:productId="100" p:productName="Apple" p:productPrice="200000f">
+    </bean>
+    
+    <bean id="pid2" class="com.google.bean.ProductBean"
+    p:productId="200" p:productName="oneplus" p:productPrice ="30000f">
+     </bean>
+     
+     <bean id="pid3" class="com.google.bean.ProductBean"
+     p:productId ="300" p:productName="Honor" p:productPrice="40000f">
+     </bean>
+     <util:set id="plistid">
+				<ref bean="pid1" />
+				<ref bean="pid2" />
+				<ref bean="pid3" />
+				<ref bean="pid2" />
+				<ref bean="pid3" />
+	</util:set>
+    
+    <bean id="SampleID" class="com.google.bean.SampleBean" p:productList-ref="plistid"></bean>
+    
+    </beans>

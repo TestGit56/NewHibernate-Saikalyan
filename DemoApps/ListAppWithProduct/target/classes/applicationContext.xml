@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+   <bean id="pid1" class="com.google.bean.ProductBean">
+   <property name="productId" value="111"></property>
+   <property name="productName" value="saikalyan"></property>
+   <property name="productPrice" value="1000f"></property>
+   
+   </bean>
+
+
+<bean id="pid2" class="com.google.bean.ProductBean">
+   <property name="productId" value="222"></property>
+   <property name="productName" value="sai"></property>
+   <property name="productPrice" value="2000f"></property>
+   
+   </bean>
+   
+<bean id="pid3" class="com.google.bean.ProductBean">
+   <property name="productId" value="333"></property>
+   <property name="productName" value="kalyan"></property>
+   <property name="productPrice" value="3000f"></property>
+   
+   </bean>
+   
+   
+   <bean id="sampleId" class="com.google.bean.SampleBean">
+   <property name="productList" >
+   <list>
+   
+   <ref bean="pid1"/>
+   <ref bean="pid2"/>
+   <ref bean="pid3"/>
+   </list>
+   
+   
+   
+   
+   </property>
+   </bean>
+    </beans>
+    
+    
+   
